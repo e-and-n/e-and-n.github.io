@@ -21,6 +21,7 @@
     left: 0;
     width: auto;
     height: 100vh;
+    transform:translateX(-50%);
 }
 
 </style>
