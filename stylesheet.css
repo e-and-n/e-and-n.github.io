@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Embedded Style Sheet</title>
 <style>
+
 #myVideo {
   position: fixed;
   right: 0;
@@ -11,6 +12,7 @@
   min-width: 100%;
   min-height: 100%;
 }
+
 </style>
 </head>
 </html>
