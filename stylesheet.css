@@ -5,42 +5,29 @@
 <title>Embedded Style Sheet</title>
 <style>
 
-@media screen and (min-width: 601px) {
-   .nav {
-    position:relative;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
- }
-}
-
-
-
-@media screen and (max-width: 600px) {
-   .nav {
-    position:relative;
-    transform: translateX(20%);
-
- }
+@keyframes changeSize {
+  0%   { width: 100%; left: 0%; }
+  50%  { width: 30%; left: 35%; }
+  100% { width: 100%; left: 0%; }
 }
 
 .background-video {
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -100;
-}
+  position: fixed;
+  width: 100%; height: 100%;
+  left: 0%; top: 0%;
+  box-shadow: inset 0 0 0 1px #000000;
 
-.myVideo {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 100vh;
+  animation-name: changeSize;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.background-video > .myVideo {
+  position: absolute;
+  width: 50px; height: 50px;
+  background-color: #000000;
+  top: 50%; margin-top: -25px;
+  left: -20%; margin-left: 150px; /* here's the negative-scalar + constant! */
 }
 
 
