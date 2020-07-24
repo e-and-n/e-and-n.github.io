@@ -19,10 +19,8 @@
 
 .myVideo {
   position: absolute;
-  width: 100%; height: auto;
-  background-color: #000000;
-  top: 0;
-  left: -20%; margin-left: 150px; /* here's the negative-scalar + constant! */
+  width: auto;
+  height: 100vh;
 }
 
 
