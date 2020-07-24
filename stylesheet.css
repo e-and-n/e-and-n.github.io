@@ -5,10 +5,6 @@
 <title>Embedded Style Sheet</title>
 <style>
 
-body {
-  background-color: black;
-}
-
 .background-video {
     position: fixed;
     top: 0;
