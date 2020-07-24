@@ -20,7 +20,7 @@
 @media screen and (max-width: 600px) {
    .nav {
     position:absolute;
-    right:20%;
+    left:-10%;
 
  }
 }
